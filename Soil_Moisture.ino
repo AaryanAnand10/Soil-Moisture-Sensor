@@ -1,5 +1,3 @@
-//YouTube | Tech at Home
-
 int sensor_pin = A0;
 
 void setup()
