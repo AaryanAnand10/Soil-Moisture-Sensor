@@ -1,0 +1,11 @@
+1. Initialize the sensor_pin variable to the analog pin connected to the soil moisture sensor (e.g., A0).
+2. Setup serial communication for debugging and set the sensor_pin as INPUT in the setup() function.
+3. Continuously loop in the loop() function.
+    a. Read the analog value from the soil moisture sensor using analogRead(sensor_pin).
+    b. Print the sensor data to the Serial Monitor for debugging purposes.
+    c. Determine the moisture level based on the sensor reading:
+        i.   If sensor_data is greater than 950, print "No moisture, Soil is dry."
+        ii.  If sensor_data is between 400 and 950 (inclusive), print "There is some moisture, Soil is medium."
+        iii. If sensor_data is less than 400, print "Soil is wet."
+    d. Introduce a delay of 100 milliseconds for stability and readability.
+4. End loop.
